@@ -2,7 +2,7 @@
 Praktikum CodeIgniter4
 
 Pada praktikum CodeIgniter4 ini dibagi menjadi ke beberapa modul, berikut perubahan yang dilakukan pada setiap modul praktikum:
-***Modul Praktikum 1**
+**Modul Praktikum 1**
 ![Screenshot 2025-05-18 111634](https://github.com/user-attachments/assets/901dcd44-bbda-44bb-8baf-066bd0651129)
 => pada gambar tersebut, telah ditambahkan beberapa routes yang akan digunakan
 ![Screenshot 2025-05-18 111820](https://github.com/user-attachments/assets/933c27ad-4a12-4d0f-923a-7c840f1a7935)
