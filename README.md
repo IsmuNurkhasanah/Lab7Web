@@ -26,7 +26,6 @@ Pada praktikum CodeIgniter4 ini dibagi menjadi ke beberapa modul, berikut peruba
 ![Screenshot 2025-05-18 111925](https://github.com/user-attachments/assets/3cf9c2ba-dd07-4087-8506-764a2bba73b8)
 
 8. menambahkan style.css agar tampilan lebih menarik
-
 ![Screenshot 2025-05-18 111937](https://github.com/user-attachments/assets/634cfe42-2194-4c62-b5bb-62954ba1f0be)
 ![Screenshot 2025-05-18 111952](https://github.com/user-attachments/assets/7d073768-6448-4c30-be2a-c8149c2cf502)
 
