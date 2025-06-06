@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title><?= $title ?? 'My Website' ?></title>
@@ -8,6 +9,7 @@
 <?php
 /** @var CodeIgniter\View\View $this */
 ?>
+
 <body>
     <div id="container">
         <header>
@@ -24,7 +26,9 @@
                 <?= $this->renderSection('content') ?>
             </section>
             <aside id="sidebar">
-                <?= view_cell(\App\Cells\ArtikelTerkini::class . '::render') ?>
+                <div class="widget-box">
+                    <?= view_cell('\App\Cells\ArtikelTerkini::render', ['kategori' => request()->getGet('kategori')]) ?>
+                </div>
                 <div class="widget-box">
                     <h3 class="title">Widget Header</h3>
                     <ul>

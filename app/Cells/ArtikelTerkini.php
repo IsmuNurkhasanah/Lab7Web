@@ -6,10 +6,20 @@ use App\Models\ArtikelModel;
 
 class ArtikelTerkini
 {
-    public function render()
+    public function render($kategori = null)
     {
         $model = new ArtikelModel();
-        $artikel = $model->orderBy('created_at', 'DESC')->limit(5)->findAll();
+
+        if ($kategori) {
+            $artikel = $model->where('kategori', $kategori)
+                ->orderBy('created_at', 'DESC')
+                ->limit(5)
+                ->findAll();
+        } else {
+            $artikel = $model->orderBy('created_at', 'DESC')
+                ->limit(5)
+                ->findAll();
+        }
 
         return view('component/artikelTerkini', ['artikel' => $artikel]);
     }

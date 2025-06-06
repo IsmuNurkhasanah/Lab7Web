@@ -2,34 +2,56 @@
 
 namespace App\Controllers;
 
+use App\Models\ArtikelModel;
+
 class Page extends BaseController
 {
     public function about()
     {
-        return view('about', [
-            'title' => 'Halaman About',
-            'content' => 'Ini adalah halaman abaut yang menjelaskan tentang isi halaman ini.'
+        $title = 'Daftar Artikel';
+        $model = new ArtikelModel();
+
+        $kategoriList = $model->select('kategori')->distinct()->findAll();
+
+        return view('layout/main', [
+            'title' => $title,
+            'kategoriList' => $kategoriList
         ]);
     }
     public function contact()
     {
-        return view('contact', [
-            'title' => 'Halaman Contact',
-            'content' => 'Ini adalah halaman abaut yang menjelaskan tentang isi halaman ini.'
+        $title = 'Contact';
+        $model = new ArtikelModel();
+
+        $kategoriList = $model->select('kategori')->distinct()->findAll();
+
+        return view('layout/main', [
+            'title' => $title,
+            'kategoriList' => $kategoriList
         ]);
     }
     public function faqs()
     {
-       return view('faqs', [
-            'title' => 'Halaman Faqs',
-            'content' => 'Ini adalah halaman abaut yang menjelaskan tentang isi halaman ini.'
+        $title = 'Faqs';
+        $model = new ArtikelModel();
+
+        $kategoriList = $model->select('kategori')->distinct()->findAll();
+
+        return view('layout/main', [
+            'title' => $title,
+            'kategoriList' => $kategoriList
         ]);
     }
     public function tos()
     {
-        return view('tos', [
-            'title' => 'Halaman Term of Services',
-            'content' => 'Ini adalah halaman abaut yang menjelaskan tentang isi halaman ini.'
+        $title = 'Term Of Services';
+        $model = new ArtikelModel();
+
+        $kategoriList = $model->select('kategori')->distinct()->findAll();
+
+        return view('layout/main', [
+            'title' => $title,
+            'kategoriList' => $kategoriList
         ]);
     }
 }

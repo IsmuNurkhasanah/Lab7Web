@@ -1,6 +1,19 @@
-<h3>Artikel Terkini</h3>
+<h3 class="title">Artikel Terkini</h3>
 <ul>
-    <?php foreach ($artikel as $row): ?>
-        <li><a href="<?= base_url('/artikel/' . $row['slug']) ?>"><?=$row['judul'] ?></a></li>
+    <form method="get">
+        <label for="kategori">Pilih Kategori:</label>
+        <select name="kategori" id="kategori" onchange="this.form.submit()">
+            <option value="">Semua</option>
+            <?php foreach ($kategoriList as $k): ?>
+                <option value="<?= esc($k['kategori']) ?>" <?= (request()->getGet('kategori') === $k['kategori']) ? 'selected' : '' ?>>
+
+                    <?= esc($k['kategori']) ?>
+                </option>
+            <?php endforeach; ?>
+        </select>
+    </form>
+
+    <?php foreach ($artikel as $a): ?>
+        <li><a href="/artikel/<?= esc($a['slug']) ?>"><?= esc($a['judul']) ?></a></li>
     <?php endforeach; ?>
 </ul>
