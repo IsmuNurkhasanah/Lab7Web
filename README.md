@@ -3,6 +3,7 @@
 
 Pada praktikum CodeIgniter4 ini dibagi menjadi ke beberapa modul, berikut perubahan yang dilakukan pada setiap modul praktikum:
 
+
 ***Modul Praktikum 1**
 1. Pada gambar tersebut, telah ditambahkan beberapa routes yang akan digunakan
 ![Screenshot 2025-05-18 111634](https://github.com/user-attachments/assets/901dcd44-bbda-44bb-8baf-066bd0651129)
@@ -85,3 +86,45 @@ Pada praktikum CodeIgniter4 ini dibagi menjadi ke beberapa modul, berikut peruba
 
 16. Tampilan Layout Hapus Artikel
 ![Screenshot 2025-06-06 101653](https://github.com/user-attachments/assets/b6da1746-a334-4099-acc8-85a4ccf4fd90)
+
+
+***Modul Praktikum 3**
+1. Membuat folder layout/main.php dalam Views
+![Screenshot 2025-06-06 114816](https://github.com/user-attachments/assets/c95274b0-4dfb-437a-8293-349e25da0e68)
+
+2. Mengubah isi dari welcome_message
+![Screenshot 2025-06-06 114909](https://github.com/user-attachments/assets/54c964bf-e701-42c0-9515-bd3a276ff2ac)
+
+3. Menampilkan data dinamis dengan membuat folder Cells/ArtikelTerkini.php dalam app
+![Screenshot 2025-06-06 114937](https://github.com/user-attachments/assets/c88e0e16-cedc-487c-b5ef-56eecf830df2)
+
+4. Membuat folder component/artikelTerkini.php dalam Views
+![Screenshot 2025-06-06 114953](https://github.com/user-attachments/assets/d6b3e51d-6bd9-4944-9646-814b1b5a3c8c)
+
+5. Tampilan baru dari Layout
+![Screenshot 2025-06-06 115433](https://github.com/user-attachments/assets/68df1014-d7e7-4d1d-8e66-4191c8235505)
+
+Penjelasan!
+1. Apa manfaat utama dari penggunaan View Layout dalam pengembangan aplikasi?
+
+Jawab : Membantu dalam membuat template utama yang bisa digunakan ulang untuk banyak halaman lainnya. Dengan itu, tidak perlu menulis ulang header footer, sidebar disetiap halaman, memiliki halaman dengan layout yang sama. Dengan mengubah satu file layout, maka semua halaman akan ikut berubah otomatis. Menjadikan coding lebih terstruktur.
+
+2. Jelaskan perbedaan antara View Cell dan View biasa
+
+Jawab : View Cell -> berguna untuk membuat bagian tampilan kecil yang fleksibel dan dapat memanggil model/controller. sedangkan
+View biasa -> berguna untuk menampilkan halaman penuh atau bagian utama, tidak bisa langsung memanggil model/controller dan bersifat statis.
+
+3. Ubah View Cell agar hanya menampilkan post dengan kategori tertentu.
+
+Jawab :
+1. Menambahkan kolom kategori pada table
+![Screenshot 2025-06-06 131610](https://github.com/user-attachments/assets/8a95c7ff-cb96-4a37-8b10-54bf30bf1a36)
+
+2. Update component/artikelTerkini.php
+![Screenshot 2025-06-06 131635](https://github.com/user-attachments/assets/7da12b2e-8c3b-4ee8-a6fa-43c49110e4ac)
+
+3. Update untuk memanggil View Cell
+![Screenshot 2025-06-06 131649](https://github.com/user-attachments/assets/0a8ff527-2a2c-4754-9db6-81b5c6a39996)
+
+4. Tampilan baru setelah update artikel dengan kategori 
+![Screenshot 2025-06-06 131658](https://github.com/user-attachments/assets/55e2f2e7-1fa3-40e1-b292-243170f6611f)
