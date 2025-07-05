@@ -1,5 +1,5 @@
 # Lab7Web
-***PRAKTIKUM CodeIgniter4 {Ismu Nurkhasanah (312310042-TI.23.C1)}***}  
+_**PRAKTIKUM CodeIgniter4 {Ismu Nurkhasanah (312310042-TI.23.C1)}}**_  
 
 Pada praktikum CodeIgniter4 ini dibagi menjadi ke beberapa modul, berikut perubahan yang dilakukan pada setiap modul praktikum:
 
@@ -17,7 +17,7 @@ Pada praktikum CodeIgniter4 ini dibagi menjadi ke beberapa modul, berikut peruba
 4. Membuat header dalam satu file, agar lebih mudah dalam memanggilnya dan meringkas coding
 ![Screenshot 2025-05-18 111839](https://github.com/user-attachments/assets/f973ae59-ae03-4e74-97e9-7c7b9c34fa51)
 
-5. Begitu juga denga footer
+5. Begitu juga dengan footer
 ![Screenshot 2025-05-18 111849](https://github.com/user-attachments/assets/9dbcc432-35e5-42d7-90dc-d611a64bfcd3)
 
 6. Menambahkan halaman yang akan digunakan seperti about, artikel, contact, dll
@@ -26,11 +26,11 @@ Pada praktikum CodeIgniter4 ini dibagi menjadi ke beberapa modul, berikut peruba
 7. Isi dalam file about, yang di mana di dalamnya memanggil file header & footer yang sudah dibuat sebelumnya
 ![Screenshot 2025-05-18 111925](https://github.com/user-attachments/assets/3cf9c2ba-dd07-4087-8506-764a2bba73b8)
 
-8. Menambahkan style.css agar tampilan lebih menarik
+8. Menambahkan _style.css_ agar tampilan lebih menarik
 ![Screenshot 2025-05-18 111937](https://github.com/user-attachments/assets/634cfe42-2194-4c62-b5bb-62954ba1f0be)
 ![Screenshot 2025-05-18 111952](https://github.com/user-attachments/assets/7d073768-6448-4c30-be2a-c8149c2cf502)
 
-9. Mengubah baseurl yang sebelumnya 'http://localhost:8080/' menjadi 'http://localhost/Lab7Web/ci4/public'
+9. Mengubah baseurl yang sebelumnya _'http://localhost:8080/'_ menjadi _'http://localhost/Lab7Web/ci4/public'_
 ![Screenshot 2025-05-18 114746](https://github.com/user-attachments/assets/c301b2cb-16c0-4c31-8f12-1619ac3c78e5)
 
 10. Berikut tampilan akhir dari modul praktikum 1
@@ -44,14 +44,14 @@ Pada praktikum CodeIgniter4 ini dibagi menjadi ke beberapa modul, berikut peruba
 2. Konekkan CI4 ke database yang telah dibuat
 ![Screenshot 2025-06-05 214838](https://github.com/user-attachments/assets/56f923aa-17fa-4e02-bb39-236cb4e454d4)
 
-3. Buat Model baru dengan ArtikelModel.php
+3. Buat Model baru dengan _ArtikelModel.php_
 ![Screenshot 2025-06-06 092937](https://github.com/user-attachments/assets/bc06d8bb-eed2-46c6-af5e-7d00d77f3304)
 
-4. Dan juga buat Controller baru dengan Artikel.php
+4. Dan juga buat Controller baru dengan _Artikel.php_
 ![Screenshot 2025-06-06 100144](https://github.com/user-attachments/assets/078a0a8c-b69d-453e-83c6-463e622f3d8b)
 ![Screenshot 2025-06-06 100207](https://github.com/user-attachments/assets/ec13f96e-8ceb-4240-8cf9-82e93ebc0e73)
 
-5. Tambahkan View untuk Artikel dengan index.php dan tambahkan beberapa Artikel pada database
+5. Tambahkan View untuk Artikel dengan _index.php_ dan tambahkan beberapa Artikel pada database
 ![Screenshot 2025-06-06 100304](https://github.com/user-attachments/assets/a677f2cc-8e29-4e4b-935d-e87b9799f604)
 
 6. Tampilan Layout Artikel
@@ -89,16 +89,16 @@ Pada praktikum CodeIgniter4 ini dibagi menjadi ke beberapa modul, berikut peruba
 
 
 ***Modul Praktikum 3**
-1. Membuat folder layout/main.php dalam Views
+1. Membuat folder _layout/main.php_ dalam Views
 ![Screenshot 2025-06-06 114816](https://github.com/user-attachments/assets/c95274b0-4dfb-437a-8293-349e25da0e68)
 
-2. Mengubah isi dari welcome_message
+2. Mengubah isi dari _welcome_message_
 ![Screenshot 2025-06-06 114909](https://github.com/user-attachments/assets/54c964bf-e701-42c0-9515-bd3a276ff2ac)
 
-3. Menampilkan data dinamis dengan membuat folder Cells/ArtikelTerkini.php dalam app
+3. Menampilkan data dinamis dengan membuat folder _Cells/ArtikelTerkini.php_ dalam app
 ![Screenshot 2025-06-06 114937](https://github.com/user-attachments/assets/c88e0e16-cedc-487c-b5ef-56eecf830df2)
 
-4. Membuat folder component/artikelTerkini.php dalam Views
+4. Membuat folder _component/artikelTerkini.php_ dalam Views
 ![Screenshot 2025-06-06 114953](https://github.com/user-attachments/assets/d6b3e51d-6bd9-4944-9646-814b1b5a3c8c)
 
 5. Tampilan baru dari Layout
@@ -120,7 +120,7 @@ Jawab :
 1. Menambahkan kolom kategori pada table
 ![Screenshot 2025-06-06 131610](https://github.com/user-attachments/assets/8a95c7ff-cb96-4a37-8b10-54bf30bf1a36)
 
-2. Update component/artikelTerkini.php
+2. Update _component/artikelTerkini.php_
 ![Screenshot 2025-06-06 131635](https://github.com/user-attachments/assets/7da12b2e-8c3b-4ee8-a6fa-43c49110e4ac)
 
 3. Update untuk memanggil View Cell
@@ -128,3 +128,32 @@ Jawab :
 
 4. Tampilan baru setelah update artikel dengan kategori 
 ![Screenshot 2025-06-06 131658](https://github.com/user-attachments/assets/55e2f2e7-1fa3-40e1-b292-243170f6611f)
+
+
+***Modul Praktikum 4**
+1. Buat table baru dengan nama _user_
+![Screenshot 2025-07-05 143108](https://github.com/user-attachments/assets/bcf26014-ae8f-4fb8-9655-2d9448b2cbcd)
+
+2. Tambahkan file baru _UserModel.php_ pada direktori _app/Models_
+![Screenshot 2025-07-05 143227](https://github.com/user-attachments/assets/5e31acc3-d65f-4ab7-8595-220083c686a1)
+
+3. Kemudian tambahkan juga file baru degan nama _User.php_ pada direktori _app/COntrollers_
+![Screenshot 2025-07-05 143329](https://github.com/user-attachments/assets/a3be241b-4144-4fdc-bbbb-3e3370f9e451)
+
+4. Tambahkan file baru pada _app/views_ dengan nama _Login.php_ untuk tampilan yang akan ditampilkan
+![Screenshot 2025-07-05 143402](https://github.com/user-attachments/assets/11bdd9c7-db93-476c-b479-b643932e4d3e)
+
+5. Kemudian tambahkan _UserSeeder.php_ pada _app/Database/Seeds/UserSeeder.php_
+![Screenshot 2025-07-05 143430](https://github.com/user-attachments/assets/8142b5ff-1fd5-44b0-a31b-49592f0b8a12)
+
+6. Tambahkan juga _Auth.php_ pada direktori _app/Filters_
+![Screenshot 2025-07-05 143500](https://github.com/user-attachments/assets/cb9d4723-10ec-4502-b33b-f3d1361eb3c2)
+
+7. Dan update pada app/Config/Routes.php menjadi seperti digambar
+![image](https://github.com/user-attachments/assets/5901298a-2293-4108-b0ac-07bf5f438979)
+
+8. Tampilan dari halaman _Login.php_
+![Screenshot 2025-07-05 143543](https://github.com/user-attachments/assets/18aa5ab4-4817-413e-b3ea-a10cdbe66a97)
+
+9. Terakhir buat method logout pada Controller User dan tambahkan tombol Logout pada Navbar
+![Screenshot 2025-07-05 143606](https://github.com/user-attachments/assets/51f44279-9e93-46ae-bea6-2b436c4689ab)
