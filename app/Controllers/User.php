@@ -50,6 +50,6 @@ class User extends BaseController
     public function logout()
     {
         session()->destroy();
-        return redirect()->to('/user/login');
+        return redirect()->to('/');
     }
 }
