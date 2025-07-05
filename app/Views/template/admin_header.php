@@ -17,6 +17,7 @@
             <a href="<?= base_url('/admin/artikel'); ?>" class="active">Dashboard</a>
             <a href="<?= base_url('/admin/artikel'); ?>">Artikel</a>
             <a href="<?= base_url('/admin/artikel/add'); ?>">Tambah Artikel</a>
+            <a href="<?= base_url('/user/logout'); ?>">Logout</a>
         </nav>
         <section id="wrapper">
             <section id="main">

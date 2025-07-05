@@ -6,7 +6,6 @@
             <option value="">Semua</option>
             <?php foreach ($kategoriList as $k): ?>
                 <option value="<?= esc($k['kategori']) ?>" <?= (request()->getGet('kategori') === $k['kategori']) ? 'selected' : '' ?>>
-
                     <?= esc($k['kategori']) ?>
                 </option>
             <?php endforeach; ?>

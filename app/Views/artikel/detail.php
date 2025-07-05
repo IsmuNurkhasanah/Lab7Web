@@ -1,5 +1,8 @@
-<?= view('template/header'); ?>
+<?php
 
+/** @var CodeIgniter\View\View $this */
+?>
+<?= $this->extend('layout/main') ?>
 <article class="entry">
     <h2>
         <?= $artikel['judul']; ?>
@@ -9,5 +12,3 @@
         <?= $artikel['isi']; ?>
     </p>
 </article>
-
-<?= view('template/footer'); ?>

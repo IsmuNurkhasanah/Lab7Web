@@ -11,6 +11,33 @@ class Artikel extends BaseController
     {
         $title = 'Daftar Artikel';
         $model = new ArtikelModel();
+
+        // Ambil daftar kategori unik dari tabel artikel
+        $kategoriList = $model->select('kategori')->distinct()->findAll();
+
+        // Ambil parameter kategori dari query string
+        $kategori = $this->request->getGet('kategori');
+
+        // Filter artikel berdasarkan kategori (jika ada)
+        if ($kategori) {
+            $artikel = $model->where('kategori', $kategori)->findAll();
+        } else {
+            $artikel = $model->findAll();
+        }
+
+        // Kirim data ke view
+        return view('artikel/index', [
+            'title' => $title,
+            'artikel' => $artikel,
+            'kategoriList' => $kategoriList,
+        ]);
+    }
+
+
+    public function main()
+    {
+        $title = 'Daftar Artikel';
+        $model = new ArtikelModel();
         $artikel = $model->findAll();
         return view('artikel/index', compact('artikel', 'title'));
     }

@@ -20,6 +20,7 @@
             <a href="<?= base_url('/artikel'); ?>">Artikel</a>
             <a href="<?= base_url('/about'); ?>">About</a>
             <a href="<?= base_url('/contact'); ?>">Kontak</a>
+            <a href="<?= base_url('user/login'); ?>">Login</a>
         </nav>
         <section id="wrapper">
             <section id="main">
@@ -27,7 +28,7 @@
             </section>
             <aside id="sidebar">
                 <div class="widget-box">
-                    <?= view_cell('\App\Cells\ArtikelTerkini::render', ['kategori' => request()->getGet('kategori')]) ?>
+                    <?= view_cell('\App\Cells\\ArtikelTerkini::render', ['kategori' => request()->getGet('kategori')]) ?>
                 </div>
                 <div class="widget-box">
                     <h3 class="title">Widget Header</h3>
