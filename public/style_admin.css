@@ -318,7 +318,11 @@ td b {
 
 /* Form */
 form {
+    width: 100%;
     margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 label {
@@ -328,9 +332,8 @@ label {
 }
 
 input[type="text"], textarea {
-    width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -350,4 +353,47 @@ button, input[type="submit"] {
 
 button:hover, input[type="submit"]:hover {
     background-color: #1a4f99;
+}
+/* --- Pagination Styling --- */
+.pagination-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px; /* Jarak sebelum footer */
+    width: 100%;
+    margin-left: 20px; /* Sama seperti tabel */
+    margin-right: 20px; /* Sama seperti tabel */
+}
+
+.pagination {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* Jarak antar tombol */
+}
+
+.pagination a,
+.pagination strong {
+    display: block;
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #2f70c0; /* Warna teks sesuai header tabel */
+    background-color: #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+}
+
+.pagination strong { /* Active page styling */
+    background-color: #2f70c0; /* Warna aktif sesuai header tabel */
+    color: white;
+    border-color: #2f70c0;
+    font-weight: bold;
+    cursor: default;
 }

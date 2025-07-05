@@ -1,4 +1,8 @@
 <?= view('template/admin_header'); ?>
+<form method="get" class="form-search">
+    <input type="text" name="q" value="<?= $q; ?>" placeholder="Cari data">
+    <input type="submit" value="Cari" class="btn btn-primary">
+</form>
 <table class="table">
     <thead>
         <tr>
@@ -18,8 +22,8 @@
                     </td>
                     <td><?= $row['status']; ?></td>
                     <td>
-                        <a class="btn btn-ubah" href="<?= base_url('/admin/artikel/edit/' .$row['id']); ?>">Ubah</a>
-                        <a class="btn btn-hapus" onclick="return confirm('Yakin menghapus data?');" href="<?= base_url('/admin/artikel/delete/' .$row['id']); ?>">Hapus</a>
+                        <a class="btn btn-ubah" href="<?= base_url('/admin/artikel/edit/' . $row['id']); ?>">Ubah</a>
+                        <a class="btn btn-hapus" onclick="return confirm('Yakin menghapus data?');" href="<?= base_url('/admin/artikel/delete/' . $row['id']); ?>">Hapus</a>
                     </td>
                 </tr>
             <?php endforeach;
@@ -38,4 +42,7 @@
         </tr>
     </tfoot>
 </table>
+<div class="pagination-container">
+    <?= $pager->only(['q'])->links(); ?>
+</div>
 <?= view('template/admin_footer'); ?>
