@@ -4,7 +4,7 @@ _**PRAKTIKUM CodeIgniter4 {Ismu Nurkhasanah (312310042-TI.23.C1)}**_
 Pada praktikum CodeIgniter4 ini dibagi menjadi ke beberapa modul, berikut perubahan yang dilakukan pada setiap modul praktikum:
 
 
-***Modul Praktikum 1**
+***Modul Praktikum 1_PHP Framework (Code Igniter)**
 1. Pada gambar tersebut, telah ditambahkan beberapa routes yang akan digunakan
 ![Screenshot 2025-05-18 111634](https://github.com/user-attachments/assets/901dcd44-bbda-44bb-8baf-066bd0651129)
 
@@ -37,7 +37,7 @@ Pada praktikum CodeIgniter4 ini dibagi menjadi ke beberapa modul, berikut peruba
 ![Screenshot 2025-05-18 112210](https://github.com/user-attachments/assets/3dada635-1b74-454a-b926-2ec71155c3f5)
 
 
-***Modul Praktikum 2**
+***Modul Praktikum 2_Framework Lanjutan (CRUD)**
 1. Buat database lab_ci4 dan tabel artikel
 ![Screenshot 2025-06-05 214724](https://github.com/user-attachments/assets/5607a2cb-9ff0-4152-a0bf-b7ce12004429)
 
@@ -88,7 +88,7 @@ Pada praktikum CodeIgniter4 ini dibagi menjadi ke beberapa modul, berikut peruba
 ![Screenshot 2025-06-06 101653](https://github.com/user-attachments/assets/b6da1746-a334-4099-acc8-85a4ccf4fd90)
 
 
-***Modul Praktikum 3**
+***Modul Praktikum 3_View Layout dan View Cell**
 1. Membuat folder _layout/main.php_ dalam Views
 ![Screenshot 2025-06-06 114816](https://github.com/user-attachments/assets/c95274b0-4dfb-437a-8293-349e25da0e68)
 
@@ -130,7 +130,7 @@ Jawab :
 ![Screenshot 2025-06-06 131658](https://github.com/user-attachments/assets/55e2f2e7-1fa3-40e1-b292-243170f6611f)
 
 
-***Modul Praktikum 4**
+***Modul Praktikum 4_Framework Lanjutan (Modul Login)**
 1. Buat table baru dengan nama _user_
 ![Screenshot 2025-07-05 143108](https://github.com/user-attachments/assets/bcf26014-ae8f-4fb8-9655-2d9448b2cbcd)
 
@@ -157,3 +157,18 @@ Jawab :
 
 9. Terakhir buat method logout pada Controller User dan tambahkan tombol Logout pada Navbar
 ![Screenshot 2025-07-05 143606](https://github.com/user-attachments/assets/51f44279-9e93-46ae-bea6-2b436c4689ab)
+
+
+***Modul Praktikum 5_Pagination dan Pencarian**
+1. Buka _Controller/Artikel_, modifikasi pada method admin_index
+![image](https://github.com/user-attachments/assets/b31a4df4-6883-4de9-a15e-a58d4f28759a)
+
+2. Kemudian tambahkan form pencarian data dan perintah untuk pagination dan pencarian 
+![image](https://github.com/user-attachments/assets/40033d7a-87be-4179-8066-4aa9c74e15af)
+![image](https://github.com/user-attachments/assets/20d8110e-f8b8-48bd-a881-533ef33fcc1e)
+
+3. Tambahkan CSS untuk pagination
+![image](https://github.com/user-attachments/assets/3071cd37-2a8f-4c6c-848a-cf063a50888d)
+
+4. Tampilan ketika sudah ditambahkan kolom pencarian dan pagination
+![image](https://github.com/user-attachments/assets/cb215d61-ef3b-46ca-a415-e4811f68f67a)
