@@ -137,7 +137,7 @@ Jawab :
 2. Tambahkan file baru _UserModel.php_ pada direktori _app/Models_
 ![Screenshot 2025-07-05 143227](https://github.com/user-attachments/assets/5e31acc3-d65f-4ab7-8595-220083c686a1)
 
-3. Kemudian tambahkan juga file baru degan nama _User.php_ pada direktori _app/COntrollers_
+3. Kemudian tambahkan juga file baru degan nama _User.php_ pada direktori _app/Controllers_
 ![Screenshot 2025-07-05 143329](https://github.com/user-attachments/assets/a3be241b-4144-4fdc-bbbb-3e3370f9e451)
 
 4. Tambahkan file baru pada _app/views_ dengan nama _Login.php_ untuk tampilan yang akan ditampilkan
@@ -149,7 +149,7 @@ Jawab :
 6. Tambahkan juga _Auth.php_ pada direktori _app/Filters_
 ![Screenshot 2025-07-05 143500](https://github.com/user-attachments/assets/cb9d4723-10ec-4502-b33b-f3d1361eb3c2)
 
-7. Dan update pada app/Config/Routes.php menjadi seperti digambar
+7. Dan update pada _app/Config/Routes.php_ menjadi seperti digambar
 ![image](https://github.com/user-attachments/assets/5901298a-2293-4108-b0ac-07bf5f438979)
 
 8. Tampilan dari halaman _Login.php_
@@ -172,3 +172,29 @@ Jawab :
 
 4. Tampilan ketika sudah ditambahkan kolom pencarian dan pagination
 ![image](https://github.com/user-attachments/assets/cb215d61-ef3b-46ca-a415-e4811f68f67a)
+
+
+***Modul Praktikum 6_Upload File Gambar**
+1. Buka Controller Artikel, kemudian update bagian method add
+![image](https://github.com/user-attachments/assets/c80e8ede-98dc-4c12-a947-b00f08d48542)
+
+2. Tambahkan juga input untuk memilih gambar pada _views/artikel/form_add.php_ dan _encrypt type_ pada form
+![image](https://github.com/user-attachments/assets/5708d198-f760-46cb-b180-a185e4fa5c0c)
+
+3. Hasil dari update upload gambar
+![image](https://github.com/user-attachments/assets/ca53de7c-9d51-4234-88a0-7cb156c6127a)
+![image](https://github.com/user-attachments/assets/8f82423a-1276-4eb2-83a0-1a0cb141d776)
+
+4. Selanjutnya, update pada bagian method edit
+![image](https://github.com/user-attachments/assets/580cb370-0034-413a-871a-a309439e926e)
+
+5. Tambahkan juga input pada _views/artikel/form_edit.php_ dan _encrypt type_ pada form
+![image](https://github.com/user-attachments/assets/6dab4de4-aee5-4a9c-850d-43b2723d7f85)
+
+6. Hasil dari update edit gambar
+Sebelum di edit
+![image](https://github.com/user-attachments/assets/1679fc85-18b4-4129-896a-9cf9cf4ad29e)
+
+Sesudah di edit
+![image](https://github.com/user-attachments/assets/b694e744-dc5e-44ac-a986-24a9606b9a48)
+![image](https://github.com/user-attachments/assets/10f99fd3-14f2-4b40-ba70-ec1028d3d721)
