@@ -192,9 +192,8 @@ Jawab :
 ![image](https://github.com/user-attachments/assets/6dab4de4-aee5-4a9c-850d-43b2723d7f85)
 
 6. Hasil dari update edit gambar
-Sebelum di edit
-![image](https://github.com/user-attachments/assets/1679fc85-18b4-4129-896a-9cf9cf4ad29e)
-
-Sesudah di edit
-![image](https://github.com/user-attachments/assets/b694e744-dc5e-44ac-a986-24a9606b9a48)
-![image](https://github.com/user-attachments/assets/10f99fd3-14f2-4b40-ba70-ec1028d3d721)
+   Sebelum di edit
+   ![image](https://github.com/user-attachments/assets/1679fc85-18b4-4129-896a-9cf9cf4ad29e)
+   Sesudah di edit
+   ![image](https://github.com/user-attachments/assets/b694e744-dc5e-44ac-a986-24a9606b9a48)
+   ![image](https://github.com/user-attachments/assets/10f99fd3-14f2-4b40-ba70-ec1028d3d721)
