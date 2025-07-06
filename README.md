@@ -192,6 +192,7 @@ Jawab :
 ![image](https://github.com/user-attachments/assets/6dab4de4-aee5-4a9c-850d-43b2723d7f85)
 
 6. Hasil dari update edit gambar
+
    Sebelum di edit
    ![image](https://github.com/user-attachments/assets/1679fc85-18b4-4129-896a-9cf9cf4ad29e)
    Sesudah di edit
