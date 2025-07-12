@@ -38,8 +38,8 @@
                     <td><?= $row['nama_kategori']; ?></td>
                     <td><?= $row['status']; ?></td>
                     <td>
-                        <a class="btn btn-sm btn-info" href="<?=base_url('/admin/artikel/edit/' . $row['id']); ?>">Ubah</a>
-                        <a class="btn btn-sm btn-danger" onclick="return confirm('Yakin menghapus data?');" href="<?=base_url('/admin/artikel/delete/' . $row['id']); ?>">Hapus</a>
+                        <a class="btn btn-sm btn-ubah" href="<?=base_url('/admin/artikel/edit/' . $row['id']); ?>">Ubah</a>
+                        <a class="btn btn-sm btn-hapus" onclick="return confirm('Yakin menghapus data?');" href="<?=base_url('/admin/artikel/delete/' . $row['id']); ?>">Hapus</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
