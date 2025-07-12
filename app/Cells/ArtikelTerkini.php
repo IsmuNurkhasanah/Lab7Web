@@ -2,25 +2,37 @@
 
 namespace App\Cells;
 
+use CodeIgniter\View\Cells\Cell;
 use App\Models\ArtikelModel;
+use App\Models\KategoriModel;
 
-class ArtikelTerkini
+class ArtikelTerkini extends Cell
 {
-    public function render($kategori = null)
-    {
-        $model = new ArtikelModel();
+    // Parameter yang dikirim dari view
+    protected string $kategori_id = '';
 
-        if ($kategori) {
-            $artikel = $model->where('kategori', $kategori)
-                ->orderBy('created_at', 'DESC')
-                ->limit(5)
-                ->findAll();
-        } else {
-            $artikel = $model->orderBy('created_at', 'DESC')
-                ->limit(5)
-                ->findAll();
+    public function render(): string
+    {
+        $kategoriModel = new KategoriModel();
+        $artikelModel = new ArtikelModel();
+
+        $kategori = $kategoriModel->findAll();
+
+        $builder = $artikelModel->builder()
+            ->select('artikel.*, kategori.nama_kategori')
+            ->join('kategori', 'kategori.id_kategori = artikel.id_kategori')
+            ->orderBy('artikel.created_at', 'DESC');
+
+        if (!empty($this->kategori_id)) {
+            $builder->where('artikel.id_kategori', $this->kategori_id);
         }
 
-        return view('component/artikelTerkini', ['artikel' => $artikel]);
+        $artikel = $builder->get(5)->getResultArray(); // ambil 5 artikel terbaru
+
+        return view('component/artikelTerkini', [
+            'kategori' => $kategori,
+            'artikel' => $artikel,
+            'kategori_id' => $this->kategori_id,
+        ]);
     }
 }

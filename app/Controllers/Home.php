@@ -3,6 +3,8 @@
 namespace App\Controllers;
 
 use App\Models\ArtikelModel;
+use App\Models\KategoriModel;
+
 class Home extends BaseController
 {
     public function index(): string
@@ -10,11 +12,11 @@ class Home extends BaseController
         $title = 'Daftar Artikel';
         $model = new ArtikelModel();
 
-        $kategoriList = $model->select('kategori')->distinct()->findAll();
+        $kategori = $model->findAll();
 
         return view('layout/main', [
             'title' => $title,
-            'kategoriList' => $kategoriList
+            'kategoriList' => $kategori
         ]);
     }
 }

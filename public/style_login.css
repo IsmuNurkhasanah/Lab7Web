@@ -75,6 +75,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-weight: 600;
+    margin-left: 215px;
 }
 
 .btn:hover {
@@ -84,11 +85,17 @@ body {
 /* header */
 header {
     padding: 20px;
+    text-align: center;
 }
 
 header h1 {
     margin: 20px 10px;
     color: #b5b5b5;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
 }
 
 /* navigasi */

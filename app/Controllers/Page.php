@@ -11,7 +11,7 @@ class Page extends BaseController
         $title = 'Daftar Artikel';
         $model = new ArtikelModel();
 
-        $kategoriList = $model->select('kategori')->distinct()->findAll();
+        $kategoriList = $model->findAll();
 
         return view('layout/main', [
             'title' => $title,
@@ -23,7 +23,7 @@ class Page extends BaseController
         $title = 'Contact';
         $model = new ArtikelModel();
 
-        $kategoriList = $model->select('kategori')->distinct()->findAll();
+        $kategoriList = $model->findAll();
 
         return view('layout/main', [
             'title' => $title,
@@ -35,7 +35,7 @@ class Page extends BaseController
         $title = 'Faqs';
         $model = new ArtikelModel();
 
-        $kategoriList = $model->select('kategori')->distinct()->findAll();
+        $kategoriList = $model->findAll();
 
         return view('layout/main', [
             'title' => $title,
@@ -47,7 +47,7 @@ class Page extends BaseController
         $title = 'Term Of Services';
         $model = new ArtikelModel();
 
-        $kategoriList = $model->select('kategori')->distinct()->findAll();
+        $kategoriList = $model->findAll();
 
         return view('layout/main', [
             'title' => $title,

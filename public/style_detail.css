@@ -1,0 +1,106 @@
+/* Gaya Umum untuk Body (opsional, jika Anda ingin mengatur keseluruhan halaman) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font modern yang mudah dibaca */
+    line-height: 1.6; /* Meningkatkan keterbacaan teks */
+    margin: 0; /* Menghilangkan margin bawaan body */
+    padding: 20px; /* Menambahkan padding di sekitar konten */
+    background-color: #f0f2f5; /* Warna latar belakang abu-abu muda */
+    color: #333; /* Warna teks abu-abu gelap */
+    display: flex; /* Menggunakan flexbox untuk penataan dasar */
+    justify-content: center; /* Memusatkan konten secara horizontal */
+    align-items: flex-start; /* Memulai konten dari atas */
+    min-height: 100vh; /* Memastikan body memenuhi tinggi viewport */
+    box-sizing: border-box; /* Memastikan padding tidak menambah lebar */
+}
+
+/* Styling untuk elemen <article> dengan class "entry" */
+.entry {
+    background-color: #ffffff; /* Latar belakang putih untuk artikel */
+    padding: 30px; /* Padding yang cukup di dalam wadah */
+    border-radius: 10px; /* Sudut sedikit membulat */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan lembut untuk kedalaman */
+    max-width: 850px; /* Lebar maksimum untuk keterbacaan, sesuaikan jika perlu */
+    width: 100%; /* Memastikan lebar penuh hingga max-width */
+    box-sizing: border-box; /* Memastikan padding tidak menambah lebar */
+}
+
+/* Styling untuk judul (<h2>) di dalam .entry */
+.entry h2 {
+    text-align: center; /* Pusatkan judul artikel (menggantikan inline style) */
+    color: #2c3e50; /* Warna biru-abu gelap untuk judul */
+    margin-bottom: 30px; /* Ruang di bawah judul */
+    font-size: 2.8em; /* Ukuran font lebih besar untuk judul */
+    font-weight: 700; /* Membuat judul lebih tebal */
+    letter-spacing: -0.5px; /* Sedikit mengurangi jarak antar huruf */
+}
+
+/* Styling untuk gambar (<img>) di dalam .entry */
+.entry img {
+    max-width: 100%; /* Gambar akan menyesuaikan lebar wadah */
+    width: 50%; /* Menggunakan lebar 50% seperti yang Anda inginkan */
+    height: auto; /* Mempertahankan rasio aspek */
+    display: block; /* Membuat gambar menjadi elemen blok */
+    margin: 0 auto; /* PENTING: Ini akan memusatkan gambar secara horizontal */
+    margin-bottom: 25px; /* Menambahkan ruang di bawah gambar */
+    border-radius: 8px; /* Sudut sedikit membulat untuk gambar */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Bayangan yang lebih menonjol untuk gambar */
+}
+
+/* Styling untuk paragraf (<p>) di dalam .entry */
+.entry p {
+    font-size: 1.15em; /* Ukuran font sedikit lebih besar untuk teks utama */
+    margin-bottom: 18px; /* Ruang di bawah paragraf */
+    text-align: justify; /* Ratakan teks untuk tampilan yang lebih rapi */
+    color: #444; /* Warna teks sedikit lebih gelap */
+}
+
+/* Penyesuaian Responsif untuk Layar Lebih Kecil */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .entry {
+        padding: 25px;
+        border-radius: 8px;
+    }
+
+    .entry h2 {
+        font-size: 2.2em;
+        margin-bottom: 25px;
+    }
+
+    .entry img {
+        width: 70%; /* Bisa ditingkatkan untuk layar tablet */
+        margin-bottom: 20px;
+    }
+
+    .entry p {
+        font-size: 1.05em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .entry {
+        padding: 18px;
+        border-radius: 6px;
+    }
+
+    .entry h2 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+    .entry img {
+        width: 90%; /* Ditingkatkan lagi untuk layar ponsel */
+        margin-bottom: 15px;
+    }
+
+    .entry p {
+        font-size: 1em;
+    }
+}

@@ -26,7 +26,8 @@
                 <label for="InputForPassword" class="form-label">Password</label>
                 <input type="password" name="password" class="form-control" id="InputForPassword">
             </div>
-            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="submit" class="btn btn-primary d-flex">Login</button><br>
+            <a href="<?= base_url('/artikel'); ?>">Back</a>
         </form>
     </div>
 </body>
