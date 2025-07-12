@@ -198,3 +198,41 @@ Jawab :
    Sesudah di edit
    ![image](https://github.com/user-attachments/assets/b694e744-dc5e-44ac-a986-24a9606b9a48)
    ![image](https://github.com/user-attachments/assets/10f99fd3-14f2-4b40-ba70-ec1028d3d721)
+
+
+***Modul Praktikum 7_Relasi Tabel dan Query Builder**
+1. Buat Tabel baru dengan nama kategori
+![image](https://github.com/user-attachments/assets/1207479f-5bfb-45bb-8b87-1916431575b6)
+
+2. Kemudian buat Model Kategori
+![image](https://github.com/user-attachments/assets/b449f493-ffed-4d99-be66-ae63d9609a3d)
+
+3. Modifikasi ArtikelModel agar terhubung dengan KategoriModel
+![image](https://github.com/user-attachments/assets/91300507-febb-44a3-b79e-8bf8dd4bb842)
+
+4. Modifikasi juga Controller Artikel
+![image](https://github.com/user-attachments/assets/a55443ff-c7a8-4697-a42a-3b6f6ae55db4)
+
+5. Serta, Modifikasi View
+![image](https://github.com/user-attachments/assets/8e65cef6-30e0-467d-b735-3c5e23729a28)
+
+6. Uji coba
+
+   a. Menampilkan daftar artikel dengan nama kategori
+   ![image](https://github.com/user-attachments/assets/db883d3c-0df2-4655-aa19-c52423499db5)
+   ![image](https://github.com/user-attachments/assets/0a460e1f-d01a-4994-abc9-86c7fa186b0e)
+
+   b. Menampilkan detail dari artikel dan menampilkan nama kategori
+   ![image](https://github.com/user-attachments/assets/a2e238a4-b498-4b65-a74e-ef2c53b57c0b)
+   ![image](https://github.com/user-attachments/assets/eb467a2c-4b2a-4f75-905d-303bc553ec35)
+
+   c. Menambah artikel baru dengan memilih kategori
+   ![image](https://github.com/user-attachments/assets/d0b05f57-41f6-43e0-99ec-ebf54234d29d)
+
+   d. Mengedit artikel dan mengubah kategorinya
+   ![image](https://github.com/user-attachments/assets/81889b27-e362-4d65-86e4-2f72b18ddb2e)
+
+   e. Menghapus artikel
+   ![image](https://github.com/user-attachments/assets/5fb5c33d-caa5-4197-886f-6a722fa822a1)
+   ![image](https://github.com/user-attachments/assets/0fea3a44-f55d-464e-8825-a799b56775fe)
+
