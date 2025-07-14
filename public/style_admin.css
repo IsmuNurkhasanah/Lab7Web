@@ -212,6 +212,7 @@ footer {
 .entry .right-img {
     float: right;
 }
+
 /* Global */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -273,7 +274,8 @@ table thead {
     color: white;
 }
 
-table th, table td {
+table th,
+table td {
     padding: 12px;
     text-align: left;
     border: 1px solid #ddd;
@@ -283,7 +285,7 @@ table tbody tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-table tfoot{
+table tfoot {
     background-color: #2f70c0;
     color: white;
 }
@@ -313,7 +315,19 @@ td b {
     color: white;
 }
 
-select{
+.btn-tambah {
+    background-color: #28a745;
+    color: white;
+    margin-bottom: 15px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.btn-tambah:hover {
+    background-color: #218838;
+}
+
+select {
     width: 30%;
     padding: 10px 10px;
     box-sizing: border-box;
@@ -332,7 +346,6 @@ select{
 /* Form */
 form {
     width: 100%;
-    margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 30px;
     margin-right: 20px;
@@ -345,7 +358,8 @@ label {
     margin-bottom: 10px;
 }
 
-input[type="text"], textarea {
+input[type="text"],
+textarea {
     padding: 10px;
     width: 50%;
     margin-bottom: 10px;
@@ -355,7 +369,8 @@ input[type="text"], textarea {
     resize: vertical;
 }
 
-button, input[type="submit"] {
+button,
+input[type="submit"] {
     background-color: #2166c2;
     color: white;
     padding: 10px 20px;
@@ -371,17 +386,26 @@ input[type="file"] {
     margin-bottom: 20px;
 }
 
-button:hover, input[type="submit"]:hover {
+button:hover,
+input[type="submit"]:hover {
     background-color: #1a4f99;
 }
+
+button[type="button"]{
+    background-color: red;
+}
+
 /* --- Pagination Styling --- */
 .pagination-container {
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 40px; /* Jarak sebelum footer */
+    margin-bottom: 40px;
+    /* Jarak sebelum footer */
     width: 100%;
-    margin-left: 20px; /* Sama seperti tabel */
-    margin-right: 20px; /* Sama seperti tabel */
+    margin-left: 20px;
+    /* Sama seperti tabel */
+    margin-right: 20px;
+    /* Sama seperti tabel */
 }
 
 .pagination {
@@ -390,7 +414,8 @@ button:hover, input[type="submit"]:hover {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 5px; /* Jarak antar tombol */
+    gap: 5px;
+    /* Jarak antar tombol */
 }
 
 .pagination a,
@@ -400,7 +425,8 @@ button:hover, input[type="submit"]:hover {
     border: 1px solid #ddd;
     border-radius: 4px;
     text-decoration: none;
-    color: #2f70c0; /* Warna teks sesuai header tabel */
+    color: #2f70c0;
+    /* Warna teks sesuai header tabel */
     background-color: #fff;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
@@ -410,10 +436,53 @@ button:hover, input[type="submit"]:hover {
     border-color: #bbb;
 }
 
-.pagination strong { /* Active page styling */
-    background-color: #2f70c0; /* Warna aktif sesuai header tabel */
+.pagination strong {
+    /* Active page styling */
+    background-color: #2f70c0;
+    /* Warna aktif sesuai header tabel */
     color: white;
     border-color: #2f70c0;
     font-weight: bold;
     cursor: default;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px;
+    position: relative;
+}
+.close-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f00;
+    cursor: pointer;
+}
+#modalEdit {
+    position: fixed;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #999;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
