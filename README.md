@@ -1,10 +1,10 @@
 # Lab7Web
-_**PRAKTIKUM CodeIgniter4 {Ismu Nurkhasanah (312310042-TI.23.C1)}**_  
+## _**PRAKTIKUM CodeIgniter4 {Ismu Nurkhasanah (312310042-TI.23.C1)}**_  
 
 Pada praktikum CodeIgniter4 ini dibagi menjadi ke beberapa modul, berikut perubahan yang dilakukan pada setiap modul praktikum:
 
 
-***Modul Praktikum 1_PHP Framework (Code Igniter)**
+## **Modul Praktikum 1_PHP Framework (Code Igniter)**
 1. Pada gambar tersebut, telah ditambahkan beberapa routes yang akan digunakan
 ![Screenshot 2025-05-18 111634](https://github.com/user-attachments/assets/901dcd44-bbda-44bb-8baf-066bd0651129)
 
@@ -37,7 +37,7 @@ Pada praktikum CodeIgniter4 ini dibagi menjadi ke beberapa modul, berikut peruba
 ![Screenshot 2025-05-18 112210](https://github.com/user-attachments/assets/3dada635-1b74-454a-b926-2ec71155c3f5)
 
 
-***Modul Praktikum 2_Framework Lanjutan (CRUD)**
+## **Modul Praktikum 2_Framework Lanjutan (CRUD)**
 1. Buat database lab_ci4 dan tabel artikel
 ![Screenshot 2025-06-05 214724](https://github.com/user-attachments/assets/5607a2cb-9ff0-4152-a0bf-b7ce12004429)
 
@@ -88,7 +88,7 @@ Pada praktikum CodeIgniter4 ini dibagi menjadi ke beberapa modul, berikut peruba
 ![Screenshot 2025-06-06 101653](https://github.com/user-attachments/assets/b6da1746-a334-4099-acc8-85a4ccf4fd90)
 
 
-***Modul Praktikum 3_View Layout dan View Cell**
+## **Modul Praktikum 3_View Layout dan View Cell**
 1. Membuat folder _layout/main.php_ dalam Views
 ![Screenshot 2025-06-06 114816](https://github.com/user-attachments/assets/c95274b0-4dfb-437a-8293-349e25da0e68)
 
@@ -130,7 +130,7 @@ Jawab :
 ![Screenshot 2025-06-06 131658](https://github.com/user-attachments/assets/55e2f2e7-1fa3-40e1-b292-243170f6611f)
 
 
-***Modul Praktikum 4_Framework Lanjutan (Modul Login)**
+## **Modul Praktikum 4_Framework Lanjutan (Modul Login)**
 1. Buat table baru dengan nama _user_
 ![Screenshot 2025-07-05 143108](https://github.com/user-attachments/assets/bcf26014-ae8f-4fb8-9655-2d9448b2cbcd)
 
@@ -159,7 +159,7 @@ Jawab :
 ![Screenshot 2025-07-05 143606](https://github.com/user-attachments/assets/51f44279-9e93-46ae-bea6-2b436c4689ab)
 
 
-***Modul Praktikum 5_Pagination dan Pencarian**
+## **Modul Praktikum 5_Pagination dan Pencarian**
 1. Buka _Controller/Artikel_, modifikasi pada method admin_index
 ![image](https://github.com/user-attachments/assets/b31a4df4-6883-4de9-a15e-a58d4f28759a)
 
@@ -174,7 +174,7 @@ Jawab :
 ![image](https://github.com/user-attachments/assets/cb215d61-ef3b-46ca-a415-e4811f68f67a)
 
 
-***Modul Praktikum 6_Upload File Gambar**
+## **Modul Praktikum 6_Upload File Gambar**
 1. Buka Controller Artikel, kemudian update bagian method add
 ![image](https://github.com/user-attachments/assets/c80e8ede-98dc-4c12-a947-b00f08d48542)
 
@@ -200,7 +200,7 @@ Jawab :
    ![image](https://github.com/user-attachments/assets/10f99fd3-14f2-4b40-ba70-ec1028d3d721)
 
 
-***Modul Praktikum 7_Relasi Tabel dan Query Builder**
+## **Modul Praktikum 7_Relasi Tabel dan Query Builder**
 1. Buat Tabel baru dengan nama kategori
 ![image](https://github.com/user-attachments/assets/1207479f-5bfb-45bb-8b87-1916431575b6)
 
@@ -236,3 +236,26 @@ Jawab :
    ![image](https://github.com/user-attachments/assets/5fb5c33d-caa5-4197-886f-6a722fa822a1)
    ![image](https://github.com/user-attachments/assets/0fea3a44-f55d-464e-8825-a799b56775fe)
 
+## **Modul Praktikum 8_AJAX**
+**AJAX** merupakan singkatan dari **Asynchronous JavaScript and XML**. AJAX adalah kumpulan teknik pengembangan web yang 
+memungkinkan aplikasi web bekerja secara asynchronous (tidak langsung). 
+Contoh penggunaan Ajax pada praktikum ini, yaitu:
+1. Tambahkan pustaka JQuery untuk mempermudah proses Ajax, download pada [https://jquery.com/](https://jquery.com/)
+2. Salin JQuery-3.6.0.min.js ke folder **public/assets/js**.
+![image](https://github.com/user-attachments/assets/43b8b84f-c17d-445f-910e-826127205f5c)
+
+3. Buat AjaxController
+![image](https://github.com/user-attachments/assets/77b74692-580f-442e-9f5d-44ee9bdfe5ed)
+
+4. Dan buat view atau tampilan untuk ajaxnya
+![image](https://github.com/user-attachments/assets/dd73cdb1-6f5b-4dfe-b68a-db5c81175e77)
+![image](https://github.com/user-attachments/assets/9495759b-cf8a-4ba6-bee3-1e56003a2080)
+
+5. Tambahkan routes baru untuk ajax pada `Routes.php`
+![image](https://github.com/user-attachments/assets/dbc54d09-5dd5-4a36-a180-ef35d3484181)
+
+6. Kemudian buat Modal baru untuk Tambah Artikel dan Edit Artikel
+![image](https://github.com/user-attachments/assets/95ff488d-6df3-4819-af62-440e28ee01c0)
+![image](https://github.com/user-attachments/assets/868dadce-0363-4f04-abdd-a15f9b1f37fd)
+![image](https://github.com/user-attachments/assets/8b59cec1-85f3-4856-a5d0-33e774c3288b)
+https://github.com/user-attachments/assets/519d210c-0db8-4f36-8337-40ef3772060d" />
