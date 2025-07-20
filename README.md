@@ -1,5 +1,5 @@
 # Lab7Web
-## _**PRAKTIKUM CodeIgniter4 {Ismu Nurkhasanah (312310042-TI.23.C1)}**_  
+## **PRAKTIKUM CodeIgniter4 {Ismu Nurkhasanah (312310042-TI.23.C1)}**
 
 Pada praktikum CodeIgniter4 ini dibagi menjadi ke beberapa modul, berikut perubahan yang dilakukan pada setiap modul praktikum:
 
@@ -259,3 +259,14 @@ Contoh penggunaan Ajax pada praktikum ini, yaitu:
 ![image](https://github.com/user-attachments/assets/868dadce-0363-4f04-abdd-a15f9b1f37fd)
 ![image](https://github.com/user-attachments/assets/8b59cec1-85f3-4856-a5d0-33e774c3288b)
 https://github.com/user-attachments/assets/519d210c-0db8-4f36-8337-40ef3772060d" />
+
+## **Modul Praktikum 9_Implementasi AJAX Pagination dan Search**
+Pada Praktikum 9 ini, kita akan mengimplementasikan Ajax Pagination dan Search. Selain itu, kita akan membuat indikator loading ketika sedang mengambil data dan kita juga dapat mengurutkan judul artikel baik ASC maupun DESC. 
+1. Modifikasi Controller Artikel pada `admin_index()`
+![image](https://github.com/user-attachments/assets/6d53b53d-aa60-4cf2-b9fe-91eeaaa8af17)
+
+2. Modifikasi juga pada View (`admin_index.php`)
+![image](https://github.com/user-attachments/assets/a1ec61f2-ef03-464e-9a41-ea8e6c16676b)
+
+3. Tampilan Akhir dari modifikasi
+![image](https://github.com/user-attachments/assets/c9b97b4f-cb56-4681-8949-2bf1dc034a04)
