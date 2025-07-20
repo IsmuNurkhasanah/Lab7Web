@@ -77,7 +77,7 @@ class Artikel extends BaseController
             $model->orderBy('artikel.created_at', 'DESC'); // default terbaru
         }
 
-        $artikel = $model->paginate(2, 'default', $page);
+        $artikel = $model->paginate(10, 'default', $page);
         $pager = $model->pager;
 
         $data = [
@@ -102,8 +102,6 @@ class Artikel extends BaseController
             return view('artikel/admin_index', $data);
         }
     }
-
-
 
     public function add()
     {
