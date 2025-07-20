@@ -258,7 +258,7 @@ Contoh penggunaan Ajax pada praktikum ini, yaitu:
 ![image](https://github.com/user-attachments/assets/95ff488d-6df3-4819-af62-440e28ee01c0)
 ![image](https://github.com/user-attachments/assets/868dadce-0363-4f04-abdd-a15f9b1f37fd)
 ![image](https://github.com/user-attachments/assets/8b59cec1-85f3-4856-a5d0-33e774c3288b)
-https://github.com/user-attachments/assets/519d210c-0db8-4f36-8337-40ef3772060d" />
+![image](https://github.com/user-attachments/assets/519d210c-0db8-4f36-8337-40ef3772060d)
 
 ## **Modul Praktikum 9_Implementasi AJAX Pagination dan Search**
 Pada Praktikum 9 ini, kita akan mengimplementasikan Ajax Pagination dan Search. Selain itu, kita akan membuat indikator loading ketika sedang mengambil data dan kita juga dapat mengurutkan judul artikel baik ASC maupun DESC. 
@@ -270,3 +270,44 @@ Pada Praktikum 9 ini, kita akan mengimplementasikan Ajax Pagination dan Search. 
 
 3. Tampilan Akhir dari modifikasi
 ![image](https://github.com/user-attachments/assets/c9b97b4f-cb56-4681-8949-2bf1dc034a04)
+
+## **Modul Praktikum 10_API**
+Representational State Transfer (REST) adalah salah satu desain arsitektur Application 
+Programming Interface (API). API sendiri merupakan interface yang menjadi perantara 
+yang menghubungkan satu aplikasi dengan aplikasi lainnya. 
+1. Download aplikasi [https://www.postman.com/downloads/](https://www.postman.com/downloads/)
+2. Buat file pada `app\Controller` dengan nama `Post.php`
+![image](https://github.com/user-attachments/assets/c12bc96a-0860-470c-9eb7-07cb3f4582c8)
+
+3. Tambahkan routing Rest API pada `app\config\Routes.php`
+![image](https://github.com/user-attachments/assets/2ad1de10-6db6-41bc-ab10-45fe88b1da3b)
+
+4. Kemudian jalankan perintah `php spark routes` dan hasilnya
+![image](https://github.com/user-attachments/assets/d2bae897-4650-4c1a-9970-c91d6ebb0671)
+
+5. Uji Testing Rest API
+   1. Buka Aplikasi Postman kemudian pilik create new -> HTTP Request
+      ![image](https://github.com/user-attachments/assets/a461410b-b26d-4c98-8d36-51a3bcf94e3c)
+
+   2. Pilih method **GET** dan masukkan url `https://localhost/Lab7Web/public/post` lalu pilih **Send**
+      ![image](https://github.com/user-attachments/assets/463bcbc8-0584-4eff-93db-c20c833ffcfc)
+
+   3. Menampilkan data spesifik dengan memasukkan url `https://localhost/Lab7Web/public/post/2` _(angka diisi sesuai dengan id data yang ingin kita lihat)_
+      ![image](https://github.com/user-attachments/assets/28f19fd9-8bd2-48ec-abd7-ebcf8f3de789)
+
+   4. Untuk mengubah atau edit data, ganti method dengan **PUT**, kemudian ubah url dengan id data yang akan diubah.
+      ![image](https://github.com/user-attachments/assets/07bbc7c6-e713-40cb-b420-a693bc181813)
+
+   5. Selanjutnya, pilih tab **Body**. Kemudian, pilih **x-www-form-uriencoded**. Masukkan nama atribut table pada kolom **KEY** dan nilai data baru pada kolom **VALUE**, kemudian pilih **Send**.
+      ![image](https://github.com/user-attachments/assets/621aa6b6-ffb9-4c62-b9d4-6250114e2264)
+
+   6. Untuk menambahkan data ubah method menjadi **POST**, dan ubah url menjadi `https://localhost/Lab7Web/public/post`.
+      ![image](https://github.com/user-attachments/assets/c9e6ed08-e571-4e9d-8cf0-4e51c7221e2a)
+
+   7. Sedangkan untuk menghapus data, ubah method menjadi **DELETE**, kemudian masukkan url dengan id data yang akan dihapus.
+      ![image](https://github.com/user-attachments/assets/4fe34530-955e-4ec8-96ad-24873a105e0a)
+
+   8. Hasil di Database setelah mengubah dan menambahkan data, serta yang terakhir setelah menghapus id data ke _16_
+      ![image](https://github.com/user-attachments/assets/8b7ce665-f2c4-494c-931b-5ef679a41615)
+      ![image](https://github.com/user-attachments/assets/dd1f352f-d355-42fd-beee-9dbe6f37b216)
+
