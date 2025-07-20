@@ -33,3 +33,5 @@ $routes->post('ajax/add', 'AjaxController::add');
 $routes->get('ajax/getDataById/(:num)', 'AjaxController::getDataById/$1');
 $routes->post('ajax/edit', 'AjaxController::edit');
 $routes->delete('ajax/delete/(:num)', 'AjaxController::delete/$1');
+
+$routes->resource('post'); 
