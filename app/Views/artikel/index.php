@@ -8,7 +8,7 @@
 
 <form method="get" class="mb-3">
     <label for="kategori">Pilih Kategori:</label>
-    <select name="kategori_id" class="form-control d-inline w-auto">
+    <select name="kategori_id" id="kategori" class="form-control d-inline w-auto">
         <option value="">Semua Kategori</option>
         <?php foreach ($kategori as $k): ?>
             <option value="<?= $k['id_kategori']; ?>" <?= ($kategori_id == $k['id_kategori']) ? 'selected' : ''; ?>>

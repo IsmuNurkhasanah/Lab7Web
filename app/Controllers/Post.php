@@ -24,7 +24,7 @@ class Post extends ResourceController
             'judul' => $this->request->getVar('judul'),
             'isi'  => $this->request->getVar('isi'),
             'status' => 1,
-            'slug' => url_title($this->request->getPost('judul'), '-', true),
+            'slug' => url_title($this->request->getVar('judul'), '-', true),
             'id_kategori' => $this->request->getVar('id_kategori')
         ];
         $model->insert($data);
@@ -54,28 +54,34 @@ class Post extends ResourceController
     {
         $model = new ArtikelModel();
 
-        // Ambil raw input dari PUT
-        $rawInput = $this->request->getBody(); // Ambil isi request body
-        parse_str($rawInput, $parsed); // Parse jadi array
+        $judul = $this->request->getVar('judul');
+        $isi = $this->request->getVar('isi');
+        $status = $this->request->getVar('status');
+        $id_kategori = $this->request->getVar('id_kategori');
+
+        // Validasi data wajib
+        if (!$judul || !$isi || !$id_kategori) {
+            return $this->failValidationErrors('Judul, isi, dan kategori wajib diisi.');
+        }
 
         $data = [
-            'judul' => $parsed['judul'] ?? null,
-            'isi'   => $parsed['isi'] ?? null,
+            'judul'       => $judul,
+            'isi'         => $isi,
+            'status'      => $status ?? 1,
+            'id_kategori' => $id_kategori,
+            'slug'        => url_title($judul, '-', true),
         ];
 
         $model->update($id, $data);
 
-        $response = [
-            'status'   => 200,
-            'error'    => null,
-            'messages' => [
-                'success' => 'Data artikel berhasil diubah.',
-                'data' => $data
-            ]
-        ];
-
-        return $this->respond($response);
+        return $this->respond([
+            'status' => 200,
+            'message' => 'Data berhasil diupdate',
+            'data' => $data
+        ]);
     }
+
+
 
     // delete 
     public function delete($id = null)
