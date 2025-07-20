@@ -49,7 +49,7 @@ class Artikel extends BaseController
 
     public function admin_index()
     {
-        $title = 'Daftar Artikel (Admin)';
+        $title = 'Daftar Artikel';
         $model = new ArtikelModel();
 
         $q = $this->request->getVar('q') ?? '';
