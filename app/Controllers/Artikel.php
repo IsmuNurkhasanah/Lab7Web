@@ -49,41 +49,61 @@ class Artikel extends BaseController
 
     public function admin_index()
     {
-        $title = 'Daftar Artikel';
+        $title = 'Daftar Artikel (Admin)';
         $model = new ArtikelModel();
 
         $q = $this->request->getVar('q') ?? '';
         $kategori_id = $this->request->getVar('kategori_id') ?? '';
+        $page = (int) ($this->request->getVar('page') ?? 1);
+        $sort = $this->request->getVar('sort') ?? '';
+
+        // Gunakan model langsung, bukan $model->table()
+        $model->select('artikel.*, kategori.nama_kategori')
+            ->join('kategori', 'kategori.id_kategori = artikel.id_kategori');
+
+        if ($q != '') {
+            $model->like('artikel.judul', $q);
+        }
+
+        if ($kategori_id != '') {
+            $model->where('artikel.id_kategori', $kategori_id);
+        }
+
+        if ($sort === 'judul_asc') {
+            $model->orderBy('artikel.judul', 'ASC');
+        } elseif ($sort === 'judul_desc') {
+            $model->orderBy('artikel.judul', 'DESC');
+        } else {
+            $model->orderBy('artikel.created_at', 'DESC'); // default terbaru
+        }
+
+        $artikel = $model->paginate(2, 'default', $page);
+        $pager = $model->pager;
+
         $data = [
             'title' => $title,
             'q' => $q,
             'kategori_id' => $kategori_id,
+            'artikel' => $artikel,
+            'pager' => $pager
         ];
 
-        $builder = $model->table('artikel')
-            ->select('artikel.*, kategori.nama_kategori')
-            ->join('kategori', 'kategori.id_kategori = artikel.id_kategori');
+        if ($this->request->isAJAX()) {
+            // Ambil links dari pager
+            $paginationLinks = $pager->links('default');
 
-        // Apply search filter if keyword is provided 
-        if ($q != '') {
-            $builder->like('artikel.judul', $q);
+            return $this->response->setJSON([
+                'artikel' => $artikel,
+                'pager' => $paginationLinks
+            ]);
+        } else {
+            $kategoriModel = new KategoriModel();
+            $data['kategori'] = $kategoriModel->findAll();
+            return view('artikel/admin_index', $data);
         }
-
-        // Apply category filter if category_id is provided 
-        if ($kategori_id != '') {
-            $builder->where('artikel.id_kategori', $kategori_id);
-        }
-
-        // Apply pagination 
-        $data['artikel'] = $builder->paginate(10);
-        $data['pager'] = $model->pager;
-
-        // Fetch all categories for the filter dropdown 
-        $kategoriModel = new KategoriModel();
-        $data['kategori'] = $kategoriModel->findAll();
-
-        return view('artikel/admin_index', $data);
     }
+
+
 
     public function add()
     {
@@ -137,11 +157,11 @@ class Artikel extends BaseController
             $file = $this->request->getFile('gambar');
             if ($file && $file->isValid() && !$file->hasMoved()) {
                 $file->move(ROOTPATH . 'public/gambar');
-                $gambar= $file->getName();
+                $gambar = $file->getName();
             } else {
                 // Ambil data artikel lama untuk mempertahankan gambar sebelumnya
                 $existing = $artikel->find($id);
-                $gambar= $existing['gambar'];
+                $gambar = $existing['gambar'];
             }
 
             $artikel->update($id, [
